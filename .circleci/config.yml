@@ -367,8 +367,8 @@ jobs:
             else
               return 0
             fi
-      - revert-migrations
-      - destroy-environment   
+#      - revert-migrations
+#      - destroy-environment   
 
   cloudfront-update_or_create:
     docker:
