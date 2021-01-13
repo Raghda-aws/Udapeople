@@ -14,10 +14,16 @@
     production: yes
     state: present
 
-- name: Copy backend dist files web server
+- name: "Copy files to EC2 instance"
   copy:
-    src: /root/project/backend
+    src: /root/project/backend.tar.gz
     dest: /home/ubuntu
+
+- name: "Unzip files for project"
+  become: true
+  shell: |
+    cd /home/ubuntu
+    tar -xzvf /home/ubuntu/backend.tar.gz
 
 - name: Install Node
   shell: |

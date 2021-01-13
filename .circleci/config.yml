@@ -306,6 +306,8 @@ jobs:
           name: Install dependencies
           command: |
             apk add --update ansible
+            apk add --update tar
+            apk add --update gzip
             apk add --update curl
             apk add --update openssh-client
       - run:
@@ -324,6 +326,8 @@ jobs:
             echo TYPEORM_USERNAME=$TYPEORM_USERNAME >> ./.env
             echo TYPEORM_PASSWORD=$TYPEORM_PASSWORD >> ./.env
             echo TYPEORM_DATABASE=$TYPEORM_DATABASE >> ./.env
+            cd ../
+            tar -czvf /root/project/backend.tar.gz backend
       - run:
           name: Deploy backend
           command: |
