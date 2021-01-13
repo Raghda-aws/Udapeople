@@ -1,8 +1,8 @@
 [URLS]
 -Public Url to GitHub repository: [https://github.com/Raghda-aws/Udapeople]
--Public URL for your S3 Bucket: [http://udapeople-32ceefd.s3-website-us-west-2.amazonaws.com]
--Public URL for your CloudFront distribution: [http://d8csgi1gzhk2h.cloudfront.net/]
--Public URLs to deployed application back-end in EC2 [http://34.212.4.58:3030/api/status]
+-Public URL for your S3 Bucket: [http://udapeople-ad39a3a.s3-website-us-west-2.amazonaws.com]
+-Public URL for your CloudFront distribution: [http://d3j6m3ymj6tvjm.cloudfront.net/]
+-Public URLs to deployed application back-end in EC2 [http://54.188.238.229:3030/api/status]
 -Public URL to your Prometheus Server [http://ec2-34-219-210-122.us-west-2.compute.amazonaws.com:9090/graph]
 
 
